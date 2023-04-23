@@ -6,9 +6,7 @@
     "start": "node Develop/server/server.js",
     "develop": "concurrently \"cd Develop/server && npm run watch\" \"cd Develop/client && npm start\"",
     "install": "cd Develop/server && npm i && cd ../client && npm i",
-    "build": "cd Develop/client && npm run build",
-    "heroku-prebuild": "npm install -g node-gyp",
-    "heroku-postbuild": "node-gyp rebuild"
+    "build": "cd Develop/client && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -20,8 +18,7 @@
     "@apollo/client": "^3.7.12",
     "apollo-server-express": "^3.12.0",
     "bcrypt": "^5.1.0",
-    "graphql": "^16.6.0",
-    "node": "^19.8.1"
+    "graphql": "^16.6.0"
   },
   "description": ""
 }
