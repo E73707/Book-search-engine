@@ -6,7 +6,8 @@
     "start": "node Develop/server/server.js",
     "develop": "concurrently \"cd Develop/server && npm run watch\" \"cd Develop/client && npm start\"",
     "install": "cd Develop/server && npm i && cd ../client && npm i",
-    "build": "cd Develop/client && npm run build"
+    "build": "cd Develop/client && npm run build",
+    "heroku-prebuild": "npm install node-pre-gyp -g"
   },
   "keywords": [],
   "author": "",
